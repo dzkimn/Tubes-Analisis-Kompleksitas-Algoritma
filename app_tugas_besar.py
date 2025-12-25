@@ -10,7 +10,7 @@ st.set_page_config(page_title="Analisis Kompleksitas TELU", layout="wide")
 class AlgoritmaAritmatika:
     @staticmethod
     def hitung_iteratif(n, a, b):
-        """Kompleksitas O(n) sesuai image_eec76b.png"""
+        """Kompleksitas O(n)"""
         total = 0
         for i in range(n):
             total += (a + i * b)
@@ -19,7 +19,7 @@ class AlgoritmaAritmatika:
     @staticmethod
     def hitung_rekursif(n, a, b):
         """
-        Kompleksitas O(2^n) sesuai perhitungan manual dosen
+        Kompleksitas O(2^n) 
         Rumus T(n) = 2T(n-1) + 2
         """
         if n <= 0:
